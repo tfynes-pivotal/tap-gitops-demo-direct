@@ -2,20 +2,13 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   labels:
-    app.kubernetes.io/part-of: tdemo3
+    app.kubernetes.io/part-of: tdemo
     apps.tanzu.vmware.com/workload-type: web
-  name: tdemo3
+  name: tanzujavawebapp
   namespace: default
 spec:
-  params:
-  - name: annotations
-    value:
-      autoscaling.knative.dev/minScale: "1"
-  env:
-  - name: message
-    value: tanzu3
   source:
     git:
       ref:
         branch: main
-      url: https://github.com/tfynes-pivotal/tdemo1
+      url: https://github.com/mgbrodi/tanzu-java-web-app-orig
