@@ -9,6 +9,7 @@ metadata:
 spec:
   source:
     git:
-      url: https://github.com/mgbrodi/tanzu-java-web-app-orig
+      #url: https://github.com/mgbrodi/tanzu-java-web-app-orig
+      url: https://github.com/tfynes-pivotal/tanzu-java-web-app-orig
       ref:
         branch: main
